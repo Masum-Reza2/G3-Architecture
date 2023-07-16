@@ -146,17 +146,47 @@ nav > ul li {
   box-shadow: 1px 1px 4px black;
   padding: 20px 30px;
 }
-.exp_box{
-    border-radius: 6px;
-    width: fit-content;
-    padding: 20px 40px;
-    color: white;
-    background-color: #FF900E;
-    text-align: center;
-    font-weight: 800;
-    position: relative;
-    right: 50px;
-    bottom: 50px;
+.exp_box {
+  border-radius: 6px;
+  width: fit-content;
+  padding: 20px 40px;
+  color: white;
+  background-color: #ff900e;
+  text-align: center;
+  font-weight: 800;
+  position: relative;
+  right: 50px;
+  bottom: 50px;
+}
+/* features section completed */
+
+/* some_facts section */
+.some_facts {
+  margin-top: 2rem;
+  /* width: fit-content; */
+  margin-left: 8.7rem;
+}
+.some_facts p {
+  margin-top: 1rem;
+}
+
+.fact_box_parent{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.fact_box_parent .box{
+    height: 25vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 1px 1px 4px black;
 }
 
 /* Responsive Design */
@@ -168,13 +198,16 @@ nav > ul li {
   .header_desc p {
     padding: 0 10px;
   }
-  .header_desc {
+  .header_desc,.fact_box_parent .box {
     width: 80vw;
   }
   nav,
   .team_section {
     flex-direction: column;
     gap: 2rem;
+  }
+  .fact_box_parent{
+    flex-direction: column;
   }
   .team_gallery {
     grid-template-columns: 1fr;
@@ -187,12 +220,15 @@ nav > ul li {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .featues_box{
+  .featues_box {
     width: 80vw;
   }
-  .exp_box{
+  .exp_box {
     position: static;
     margin: 10px auto;
+  }
+  .some_facts{
+    margin-left: 3.5rem;
   }
 }
 /* medium devices */
@@ -222,11 +258,17 @@ nav > ul li {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .featues_box{
+  .featues_box {
     width: 80vw;
   }
-  .exp_box{
+  .exp_box {
     position: static;
     margin: 10px auto;
+  }
+  .some_facts{
+    margin-left: 3.8rem;
+  }
+  .fact_box_parent .box{
+    width: 20vw;
   }
 }
