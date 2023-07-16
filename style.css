@@ -217,9 +217,30 @@ nav > ul li {
 .spon_com > div img {
   width: 100%;
 }
+
+
+/* footer_box starts */
+.footer_box{
+    background-color: #FFF4E7;
+    padding: 20px 100px;
+    text-align: center;
+    width: 66vw;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+
+footer{
+    margin-top: 3rem;
+}
+
 /* Responsive Design */
 /* Small devices */
 @media screen and (max-width: 576px) {
+    .footer_box{
+        width: 30vw;
+        /* padding: 4px 10px; */
+    }
   .spon_com {
     flex-direction: column;
     display: grid;
